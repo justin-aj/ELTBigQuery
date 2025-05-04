@@ -1,0 +1,13 @@
+{"timestamp":"2025-05-02T20:51:59.380191","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-02T20:51:59.380578","level":"info","event":"Filling up the DagBag from /home/ajinfrankj/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-02T20:51:59.631888Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:51:59.631985Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:51:59.632022Z","level":"info","event":"Current task name:load_gcs_to_bigquery_using_client","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:51:59.632055Z","level":"info","event":"Dag name:gdc_methylation_extraction_load_pipeline_client","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:51:59.632136Z","level":"info","event":"Task: Loading data from gs://gdc_data_stage/gdc_methylation_metadata/2025-05-02/gdc_methylation_metadata_manual__2025-05-02T20:39:32.640552+00:00.jsonl to BigQuery table rock-extension-450317-c9.gdc_data.methylation_metadata","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:52:00.147766Z","level":"info","event":"Task: BigQuery load job started: 26768b06-da6b-40ee-8492-b90524b0e29e","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:52:13.012237Z","level":"info","event":"Task: BigQuery load job completed. Loaded 49719 rows.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:52:13.012274","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-02T20:52:13.027634Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:52:13.027751Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:52:13.027786Z","level":"info","event":"Task operator:<Task(PythonOperator): load_gcs_to_bigquery_using_client>","chan":"stdout","logger":"task"}

@@ -1,0 +1,17 @@
+{"timestamp":"2025-05-02T20:39:33.831104","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-02T20:39:33.831482","level":"info","event":"Filling up the DagBag from /home/ajinfrankj/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-02T20:39:34.067656Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:34.067780Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:34.067827Z","level":"info","event":"Current task name:extract_and_upload_gdc_methylation_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:34.067861Z","level":"info","event":"Dag name:gdc_methylation_extraction_load_pipeline_client","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:34.067891Z","level":"info","event":"Task: Querying GDC files endpoint for DNA Methylation data...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:51.987318Z","level":"info","event":"Task: Found 49719 DNA Methylation files.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:52.162811Z","level":"info","event":"Task: Found 13629 unique cases associated with these files.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:39:52.162974Z","level":"info","event":"Task: Querying GDC cases endpoint for associated sample metadata...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:32.002240Z","level":"info","event":"Task: Retrieved metadata for 13629 cases.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:33.694540Z","level":"info","event":"Task: Uploading combined metadata to gs://gdc_data_stage/gdc_methylation_metadata/2025-05-02/gdc_methylation_metadata_manual__2025-05-02T20:39:32.640552+00:00.jsonl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:42.747651Z","level":"info","event":"Task: Data uploaded successfully to gs://gdc_data_stage/gdc_methylation_metadata/2025-05-02/gdc_methylation_metadata_manual__2025-05-02T20:39:32.640552+00:00.jsonl","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:42.970335","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-02T20:40:42.987861Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:42.987950Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-02T20:40:42.987986Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_and_upload_gdc_methylation_data>","chan":"stdout","logger":"task"}

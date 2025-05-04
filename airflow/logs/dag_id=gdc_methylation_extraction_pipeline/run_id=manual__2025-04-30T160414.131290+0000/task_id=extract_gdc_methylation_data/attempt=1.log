@@ -1,0 +1,17 @@
+{"timestamp":"2025-04-30T16:04:15.292367","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-04-30T16:04:15.293364","level":"info","event":"Filling up the DagBag from /home/ajinfrankj/airflow/dags/extract_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-04-30T16:04:15.354866Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.355009Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.355068Z","level":"info","event":"Current task name:extract_gdc_methylation_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.355108Z","level":"info","event":"Dag name:gdc_methylation_extraction_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.355142Z","level":"info","event":"Task: Querying GDC files endpoint for DNA Methylation data...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.951153Z","level":"info","event":"Task: Found 376 DNA Methylation files.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.951347Z","level":"info","event":"Task: Found 309 unique cases associated with these files.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:15.951409Z","level":"info","event":"Task: Querying GDC cases endpoint for associated sample metadata...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.360496Z","level":"info","event":"Task: Retrieved metadata for 309 cases.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.485635Z","level":"info","event":"Task: Saving combined metadata to /tmp/gdc_extracted_data/gdc_methylation_metadata_2025-04-30_manual__2025-04-30T16:04:14.131290+00:00.json","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.531579Z","level":"info","event":"Task: Data saved successfully.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.534641","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-04-30T16:04:18.559222Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.559362Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-04-30T16:04:18.559402Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_gdc_methylation_data>","chan":"stdout","logger":"task"}

@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: raw
+    database: rock-extension-450317-c9
+    schema: gdc_data
+    tables:
+      - name: methylation_metadata

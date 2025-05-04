@@ -1,0 +1,11 @@
+tcga_transform:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: rock-extension-450317-c9
+      dataset: gdc_data
+      threads: 4
+      timeout_seconds: 300
+      location: us-east1

@@ -1,0 +1,28 @@
+name: tcga_transform
+version: 1.0.0
+config-version: 2
+
+profile: tcga_transform
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  tcga_transform:
+    staging:
+      +materialized: view
+      +schema: staging
+    intermediate:
+      +materialized: table
+      +schema: intermediate
+      +partition_by: {"field": "case_id", "data_type": "string"}
+    marts:
+      +materialized: table
+      +schema: marts
+      +partition_by: {"field": "processing_date", "data_type": "date"}
+      +cluster_by: ["primary_diagnosis", "sample_category"]
